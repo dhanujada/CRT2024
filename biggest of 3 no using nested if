@@ -1,0 +1,27 @@
+iggest of 3 numbers using nested if
+#include <stdio.h>
+int main() {
+    // Write C code here
+ int a,b,c;
+ scanf("%d,%d,%d",&a,&b,&c);
+ if(a>b){
+     if(a>c){
+         printf(" a is greater");
+     }
+     else
+     {
+         printf("c is greater");
+     }
+     if(b>c){
+         printf("b is greater");
+     }
+     else
+     {
+         printf("c is greater");
+     }
+     
+
+     }
+     return 0;
+     
+ }
