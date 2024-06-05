@@ -1,0 +1,22 @@
+Accept two integer values from the user and return their product. If the product is greater than 1000, then return their sum
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int r=a*b;
+    if(r<=1000){
+        printf("%d",a*b);
+    }
+    else
+    {
+        printf("%d",a+b);
+    }
+    
+    return 0;
+}
