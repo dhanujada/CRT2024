@@ -1,0 +1,43 @@
+Print the pattern
+
+Input Format
+
+Read no of rows
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+print pattern
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n,i,j,k;
+    scanf("%d",&n);
+       for(i=1;i<=n;i++){
+           for(k=1;k<i;k++){
+               printf(" ");
+           }
+           for(j=n;j>=i;j--){
+               printf("*");
+           }
+           printf("\n");
+       }
+    return 0;
+}
+
+
+
+
+
+
+
+
