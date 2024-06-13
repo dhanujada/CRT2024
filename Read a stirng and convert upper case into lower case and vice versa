@@ -1,0 +1,25 @@
+Read a stirng and convert upper case into lower case and vice versa
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    char str1[50];
+    scanf("%[^\n]s",str1);
+    for(int i=0;str1[i]!='\0';i++){
+    if(str1[i]>=65 && str1[i]<=90){
+        str1[i]=str1[i]+32;
+    }
+    else
+    {
+        if(str1[i]>=97 && str1[i]<=122){
+            str1[i]=str1[i]-32;
+        }
+        }
+    }
+printf("%s",str1);
+    return 0;
+}
