@@ -1,0 +1,15 @@
+string length
+
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    // Write C code here
+    char str[30];
+    scanf("%[^\n]s",str); 
+    int n=strlen(str);
+    printf("%d",n);
+
+
+    return 0;
+}
