@@ -1,0 +1,23 @@
+string compare wthout using strcmp():
+
+#include <stdio.h>
+#include<string.h>
+int main() {
+    // Write C code here
+    char str1[30],str2[30];
+    scanf("%s",str1);
+    scanf("%s",str2);
+    int n=strlen(str1);
+    int m=strlen(str2);
+    if(n!=m){
+        printf("Not same");
+        return 0;
+    }else{
+        for(int i=0;i<n&&i<m;i++){
+            if(str1[i]!=str2[i]){
+                printf("Not same");
+                return 0;
+            }
+        }
+        printf("same");
+    }
